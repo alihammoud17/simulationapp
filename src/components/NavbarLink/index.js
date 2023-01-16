@@ -1,15 +1,14 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './NavLink.module.css';
+import { active_navlink, navlink } from './Navbarlink.js';
 
-const NavbarLink = ({ children }) => {
+const NavbarLink = ({ to, children }) => {
   return (
     <Box
-      style={({ isActive }) =>
-        isActive ? styles.active_navlink : styles.navlink
-      }
+      style={({ isActive }) => (isActive ? active_navlink : navlink)}
       as={NavLink}
+      to={to}
     >
       {children}
     </Box>
