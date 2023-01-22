@@ -13,8 +13,9 @@ const Footer = () => {
       paddingX={5}
       paddingY={2}
       align="center"
-      boxShadow="topBase"
+      // boxShadow="topBase"
       justify="space-between"
+      flexDir={{ base: 'column', lg: 'row' }}
     >
       <Box display="flex" fontSize="1rem">
         <Text>Copyrights &copy; {new Date().getFullYear()}</Text>{' '}

@@ -1,6 +1,10 @@
 import { extendTheme } from '@chakra-ui/react';
 
 export const creamTheme = extendTheme({
+  fonts: {
+    heading: 'Canterbury Regular',
+    body: 'Canterbury Regular',
+  },
   styles: {
     global: (props) => ({
       body: {
