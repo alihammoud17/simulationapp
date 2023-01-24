@@ -39,6 +39,9 @@ const Navbar = () => {
             h="100%"
             w="100px"
             src="/images/main_logo_transparent.png"
+            // lg: '/images/Full_logo.png',
+
+            alt="Simulation store"
           ></Image>
         </Link>
         <Spacer w="80%" />
@@ -61,6 +64,8 @@ const Navbar = () => {
                 }}
                 bgColor="black"
                 color="cream"
+                fontWeight="bold"
+                fontFamily="sans-serif"
               >
                 SHOP NOW
               </Button>
