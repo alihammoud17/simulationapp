@@ -9,11 +9,17 @@ import {
   Button,
 } from '@chakra-ui/react';
 import React from 'react';
-import { Link as RRDLink } from 'react-router-dom';
+import { Link as RRDLink, useNavigate } from 'react-router-dom';
 import { CHiMenu, CHiOutlineShoppingBag } from './Icons';
 import NavbarLink from './NavbarLink';
 
-const Navbar = () => {
+const Navbar = ({ onOpen }) => {
+  const navigate = useNavigate();
+
+  const goToProducts = () => {
+    navigate('/products');
+  };
+
   return (
     <Flex
       // bgColor="white"
@@ -24,7 +30,7 @@ const Navbar = () => {
       // boxShadow="botBase"
       paddingX={{ base: 5, lg: 0 }}
     >
-      <Box w="33%" display={{ base: 'block', lg: 'none' }}>
+      <Box onClick={onOpen} w="33%" display={{ base: 'block', lg: 'none' }}>
         <CHiMenu fontSize="1.7rem" />
       </Box>
       <Flex
@@ -66,6 +72,7 @@ const Navbar = () => {
                 color="cream"
                 fontWeight="bold"
                 fontFamily="sans-serif"
+                onClick={goToProducts}
               >
                 SHOP NOW
               </Button>

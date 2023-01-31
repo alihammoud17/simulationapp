@@ -1,8 +1,13 @@
 import React from 'react';
 import { Center, Image, Box, Flex, Heading } from '@chakra-ui/react';
-import ProductCard from '../components/ProductCard';
+import FeaturedCard from '../components/FeaturedCard';
 import { data } from '../data/dummy';
 import { CFaPlayCircle } from '../components/Icons';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 
 const Home = () => {
   return (
@@ -31,14 +36,56 @@ const Home = () => {
       >
         <Heading>FEATURED</Heading>
       </Center>
-      <Flex flexDir={{ base: 'column', lg: 'row' }} gap={5} justify="center">
+      <Swiper
+        // pagination={{
+        //   enabled: true,
+        //   clickable: true,
+        //   dynamicBullets: true,
+        // }}
+        // keyboard={true}
+        className="simulation-swiper"
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+          el: '.swiper-pagination-custom',
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+      >
+        {data.map(
+          (d) =>
+            d.isFeatured && (
+              <SwiperSlide>
+                <FeaturedCard name={d.name} image={d.image} price={d.price} />
+              </SwiperSlide>
+            )
+        )}
+      </Swiper>
+      <Center>
+        <div className="swiper-pagination-custom"></div>
+      </Center>
+      {/* <Flex flexDir={{ base: 'column', lg: 'row' }} gap={5} justify="center">
         {data.map(
           (d) =>
             d.isFeatured && (
               <ProductCard name={d.name} image={d.image} price={d.price} />
             )
         )}
-      </Flex>
+      </Flex> */}
       <Center pb={10}>
         <Image w="30rem" h="auto" src="/images/human_icon.png" />
       </Center>

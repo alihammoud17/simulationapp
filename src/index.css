@@ -18,3 +18,19 @@ html, body {
     height: auto !important;
     min-height: 100%;
 }
+
+.simulation-swiper {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.swiper-pagination-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #C68E17 !important;
+}

@@ -8,15 +8,16 @@ export const creamTheme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        bg: '#FFFEF2',
+        bg: '#F6F0BC',
         color: '#212427',
       },
     }),
   },
   colors: {
-    cream: '#FFFEF2',
+    cream: '#F6F0BC',
     floral: '#fffaf0',
     caramel: '#C68E17',
+    'caramel-half': 'rgba(198, 142, 23, 0.5)',
     white: '#fff',
     black: '#212427',
   },

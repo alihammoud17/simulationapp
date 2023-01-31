@@ -1,23 +1,48 @@
 export const data = [
   {
+    id: 1,
     name: 'Hoodie 1',
     image: '/images/simulation/hoodie1.jpg',
     price: 24.99,
     isFeatured: true,
   },
   {
+    id: 2,
+    name: 'Hoodie 1',
+    image: '/images/simulation/hoodie1.jpg',
+    price: 24.99,
+    isFeatured: true,
+  },
+  {
+    id: 3,
+    name: 'Hoodie 1',
+    image: '/images/simulation/hoodie1.jpg',
+    price: 24.99,
+    isFeatured: true,
+  },
+  {
+    id: 4,
+    name: 'Hoodie 1',
+    image: '/images/simulation/hoodie1.jpg',
+    price: 24.99,
+    isFeatured: true,
+  },
+  {
+    id: 5,
     name: 'Hoodie 2',
     image: '/images/simulation/hoodie2.jpg',
     price: 23.99,
     isFeatured: true,
   },
   {
+    id: 6,
     name: 'Hoodie 3',
     image: '/images/simulation/hoodie3.jpg',
     price: 25.99,
     isFeatured: false,
   },
   {
+    id: 7,
     name: 'Hoodie 4',
     image: '/images/simulation/hoodie4.jpg',
     price: 22.99,
