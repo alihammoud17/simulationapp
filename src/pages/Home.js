@@ -55,11 +55,11 @@ const Home = () => {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
+          1024: {
             slidesPerView: 4,
             spaceBetween: 40,
           },
-          1024: {
+          1680: {
             slidesPerView: 5,
             spaceBetween: 50,
           },
@@ -69,7 +69,7 @@ const Home = () => {
         {data.map(
           (d) =>
             d.isFeatured && (
-              <SwiperSlide>
+              <SwiperSlide className="swiper-slide">
                 <FeaturedCard name={d.name} image={d.image} price={d.price} />
               </SwiperSlide>
             )
@@ -87,7 +87,7 @@ const Home = () => {
         )}
       </Flex> */}
       <Center pb={10}>
-        <Image w="30rem" h="auto" src="/images/human_icon.png" />
+        <Image w="10rem" h="auto" src="/images/human_icon.png" />
       </Center>
     </Box>
   );

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Flex
       height="5.5rem"
-      bgColor="white"
+      // bgColor="white"
       width="100%"
       bottom={0}
       paddingX={5}

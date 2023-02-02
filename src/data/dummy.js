@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    name: 'Hoodie 1',
+    name: 'Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1',
     image: '/images/simulation/hoodie1.jpg',
     price: 24.99,
     isFeatured: true,
@@ -22,7 +22,7 @@ export const data = [
   },
   {
     id: 4,
-    name: 'Hoodie 1',
+    name: 'Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1Hoodie 1',
     image: '/images/simulation/hoodie1.jpg',
     price: 24.99,
     isFeatured: true,

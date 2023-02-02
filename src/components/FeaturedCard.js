@@ -19,7 +19,7 @@ const fade = keyframes`
   100% { opacity: 1; }
 `;
 
-const FeaturedCard = ({ name, image, price }) => {
+const FeaturedCard = ({ name, image, price, flex }) => {
   const [overlayVisibility, setOverlayVisibility] = useState('hidden');
 
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -27,8 +27,8 @@ const FeaturedCard = ({ name, image, price }) => {
   const animation = prefersReducedMotion ? undefined : `${fade} 0.5s`;
 
   return (
-    <Card maxW="sm" bgColor="floral">
-      <CardBody p={0}>
+    <Card height="100%" maxW="sm" bgColor="floral" fontWeight="light">
+      <CardBody p={0} display="flex" flexDir="column">
         <Box
           position="relative"
           onMouseLeave={() => setOverlayVisibility('hidden')}
@@ -44,9 +44,18 @@ const FeaturedCard = ({ name, image, price }) => {
             w="100%"
             h="100%"
             bgColor="caramel-half"
+            _active={{
+              animation: animation,
+            }}
+            _focus={{
+              animation: animation,
+            }}
             // opacity={0.5}
             _hover={{
               // visibility: overlayVisibility,
+              animation: animation,
+            }}
+            _focusWithin={{
               animation: animation,
             }}
             padding={15}
@@ -54,9 +63,13 @@ const FeaturedCard = ({ name, image, price }) => {
             <Button opacity={1}>Buy Now</Button>
           </Center>
         </Box>
-        <Flex justify="space-between" mt="2" spacing="1" p={3}>
-          <Heading size="md">{name}</Heading>
-          <Text fontSize="1.2rem">${price}</Text>
+        <Flex gap="2" direction="column" mt="auto" p={3}>
+          <Heading textAlign="left" size="sm" fontWeight="light">
+            {name}
+          </Heading>
+          <Text alignSelf="end" fontSize="0.8em" fontWeight="medium">
+            ${price}
+          </Text>
         </Flex>
       </CardBody>
     </Card>

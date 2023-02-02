@@ -1,23 +1,19 @@
 import { extendTheme } from '@chakra-ui/react';
 
 export const creamTheme = extendTheme({
-  fonts: {
-    heading: 'Canterbury Regular',
-    body: 'Canterbury Regular',
-  },
   styles: {
     global: (props) => ({
       body: {
-        bg: '#F6F0BC',
+        bg: '#FFFEF2',
         color: '#212427',
       },
     }),
   },
   colors: {
-    cream: '#F6F0BC',
+    cream: '#FFFEF2',
     floral: '#fffaf0',
-    caramel: '#C68E17',
-    'caramel-half': 'rgba(198, 142, 23, 0.5)',
+    caramel: '#F6F0BC',
+    'caramel-half': 'rgb(246, 240, 188, 0.5)',
     white: '#fff',
     black: '#212427',
   },

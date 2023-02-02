@@ -38,7 +38,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               </h2>
               <AccordionPanel mt={4} p={0}>
                 <List>
-                  <ListItem>
+                  <ListItem onClick={onClose}>
                     <NavbarLink to="/products">Hoodies</NavbarLink>
                   </ListItem>
                 </List>
@@ -47,7 +47,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           </Accordion>
 
           <List>
-            <ListItem h="2rem" w="5.2rem">
+            <ListItem onClick={onClose} h="2rem" w="5.2rem">
               <NavbarLink to="/aboutus">About Us</NavbarLink>
             </ListItem>
             <ListItem h="2rem" w="5.2rem">
