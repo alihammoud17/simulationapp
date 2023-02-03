@@ -2,7 +2,7 @@
   "short_name": "Simulation",
   "name": "Simulation Clothing Shop",
   "icons": [
-    
+    "%PUBLIC_URL%/images/main_logo.jpg"
   ],
   "start_url": ".",
   "display": "standalone",
