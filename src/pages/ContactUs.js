@@ -71,7 +71,10 @@ const ContactUs = () => {
               >
                 Get in Touch
               </Heading>
-              <Flex gap="10">
+              <Flex
+                gap={{ base: 2, lg: '10' }}
+                direction={{ base: 'column', lg: 'row' }}
+              >
                 <Center gap="3">
                   <Box>
                     <MdPhone />
