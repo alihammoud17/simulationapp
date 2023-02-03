@@ -1,11 +1,12 @@
-import { Box, Flex, Spacer, Text } from '@chakra-ui/react';
+import { Box, Flex, Spacer, Text, Link } from '@chakra-ui/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { CFaFacebook, CFaInstagram, CFaTikTok } from '../components/Icons';
 
 const Footer = () => {
   return (
     <Flex
+      flexBasis="100px"
       height="5.5rem"
       // bgColor="white"
       width="100%"
@@ -30,10 +31,13 @@ const Footer = () => {
         w="7rem"
         fontSize="1.4rem"
       >
-        <Link>
+        <Link href="https://www.instagram.com/simulation.lb/" target="_blank">
           <CFaInstagram></CFaInstagram>
         </Link>
-        <Link>
+        <Link
+          href="https://www.facebook.com/profile.php?id=100089393255867&mibextid=LQQJ4d"
+          target="_blank"
+        >
           <CFaFacebook></CFaFacebook>
         </Link>
         <Link>

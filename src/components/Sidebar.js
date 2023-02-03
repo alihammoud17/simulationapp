@@ -51,7 +51,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               <NavbarLink to="/aboutus">About Us</NavbarLink>
             </ListItem>
             <ListItem h="2rem" w="5.2rem">
-              Contact Us
+              <NavbarLink to="/contactus">Contact Us</NavbarLink>
             </ListItem>
           </List>
         </DrawerBody>

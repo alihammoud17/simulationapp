@@ -87,7 +87,7 @@ const Navbar = ({ onOpen }) => {
               <NavbarLink to="/aboutus">About Us</NavbarLink>
             </ListItem>
             <ListItem display={{ base: 'none', lg: 'block' }} w="5.2rem">
-              Contact Us
+              <NavbarLink to="/contactus">Contact Us</NavbarLink>
             </ListItem>
             <ListItem padding={{ base: 0, lg: 10 }}>
               <Box position="relative">

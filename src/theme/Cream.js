@@ -3,9 +3,13 @@ import { extendTheme } from '@chakra-ui/react';
 export const creamTheme = extendTheme({
   styles: {
     global: (props) => ({
+      html: {
+        height: '100%',
+      },
       body: {
         bg: '#FFFEF2',
         color: '#212427',
+        height: '100%',
       },
     }),
   },

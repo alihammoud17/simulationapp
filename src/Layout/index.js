@@ -9,14 +9,18 @@ const Layout = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box bgColor="cream">
-      <Navbar onOpen={onOpen} />
-      <Outlet />
-      <Footer />
+    <>
+      <Box bgColor="cream" display="flex" flexDir="column" minH="100vh">
+        <Box flexGrow="1">
+          <Navbar onOpen={onOpen} />
+          <Outlet />
+        </Box>
+        <Footer />
+      </Box>
       <Portal>
         <Sidebar isOpen={isOpen} onClose={onClose} />
       </Portal>
-    </Box>
+    </>
   );
 };
 
