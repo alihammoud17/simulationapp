@@ -23,7 +23,7 @@ const Navbar = ({ onOpen }) => {
   return (
     <Flex
       // bgColor="white"
-      zIndex={9999}
+      zIndex={10}
       align="center"
       justify="center"
       h="6.25rem"
@@ -32,7 +32,7 @@ const Navbar = ({ onOpen }) => {
       paddingX={{ base: 5, lg: 0 }}
     >
       <Box
-        zIndex={9999}
+        zIndex={10}
         onClick={onOpen}
         w="33%"
         display={{ base: 'block', lg: 'none' }}
@@ -40,15 +40,15 @@ const Navbar = ({ onOpen }) => {
         <CHiMenu color="#fff" fontSize="1.7rem" />
       </Box>
       <Flex
-        zIndex={9999}
+        zIndex={10}
         h="100%"
         w={{ base: 'auto', lg: '10%' }}
         justify={{ base: 'center', lg: 'start' }}
         align={{ base: 'center', lg: 'start' }}
       >
-        <Link zIndex={9999} as={RRDLink} to="/" w="100px" h="100%">
+        <Link zIndex={10} as={RRDLink} to="/" w="100px" h="100%">
           <Image
-            zIndex={9999}
+            zIndex={10}
             justifySelf="center"
             h="100%"
             w="100px"
@@ -61,7 +61,7 @@ const Navbar = ({ onOpen }) => {
         <Spacer w="80%" />
       </Flex>
       <Flex
-        zIndex={9999}
+        zIndex={10}
         display={{ base: 'none', lg: 'block' }}
         align="center"
         w="60%"
@@ -71,7 +71,7 @@ const Navbar = ({ onOpen }) => {
           <Flex align="center" justify="start" gap={20} textAlign="center">
             <ListItem textAlign="center">
               <Button
-                zIndex={9999}
+                zIndex={10}
                 w="8rem"
                 h="2rem"
                 _hover={{
@@ -94,34 +94,34 @@ const Navbar = ({ onOpen }) => {
         <List>
           <Flex gap={2} align="center">
             <ListItem
-              zIndex={9999}
+              zIndex={10}
               display={{ base: 'none', lg: 'block' }}
               w="5.2rem"
               color="#fff"
             >
-              <NavbarLink zIndex={9999} to="/aboutus">
+              <NavbarLink zIndex={10} to="/aboutus">
                 About Us
               </NavbarLink>
             </ListItem>
             <ListItem
-              zIndex={9999}
+              zIndex={10}
               display={{ base: 'none', lg: 'block' }}
               w="5.2rem"
               color="#fff"
             >
-              <NavbarLink zIndex={9999} to="/contactus">
+              <NavbarLink zIndex={10} to="/contactus">
                 Contact Us
               </NavbarLink>
             </ListItem>
             <ListItem padding={{ base: 0, lg: 10 }}>
-              <Box zIndex={9999} position="relative">
+              <Box zIndex={10} position="relative">
                 <CHiOutlineShoppingBag
-                  zIndex={9999}
+                  zIndex={10}
                   fontSize="1.7rem"
                   color="#fff"
                 />
                 <Box
-                  zIndex={9999}
+                  zIndex={10}
                   position="absolute"
                   top={0}
                   right={0}

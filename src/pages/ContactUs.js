@@ -54,20 +54,20 @@ const ContactUs = () => {
       }}
       id="contact"
       w="100%"
-      zIndex={9999}
+      zIndex={10}
       color="#fff"
     >
       <Box
         borderRadius="lg"
         m={{ base: 1, md: 5, lg: 8 }}
         p={{ base: 1, lg: 8 }}
-        zIndex={9999}
+        zIndex={10}
       >
         <Box>
-          <VStack spacing={{ base: 4, md: 5, lg: 6 }} zIndex={9999}>
-            <Center gap="3" flexDir="column" zIndex={9999}>
+          <VStack spacing={{ base: 4, md: 5, lg: 6 }} zIndex={10}>
+            <Center gap="3" flexDir="column" zIndex={10}>
               <Heading
-                zIndex={9999}
+                zIndex={10}
                 fontSize={{
                   base: '4xl',
                   md: '5xl',
@@ -76,21 +76,21 @@ const ContactUs = () => {
                 Get in Touch
               </Heading>
               <Flex
-                zIndex={9999}
+                zIndex={10}
                 gap={{ base: 2, lg: '10' }}
                 direction={{ base: 'column', lg: 'row' }}
               >
-                <Center gap="3" zIndex={9999}>
-                  <Box zIndex={9999}>
+                <Center gap="3" zIndex={10}>
+                  <Box zIndex={10}>
                     <MdPhone />
                   </Box>
-                  <Box zIndex={9999}>+96170866845 | +96171322771</Box>
+                  <Box zIndex={10}>+96170866845 | +96171322771</Box>
                 </Center>
-                <Center zIndex={9999} gap="3">
+                <Center zIndex={10} gap="3">
                   <Box>
                     <MdEmail />
                   </Box>
-                  <Box zIndex={9999}>simulationconcept@hotmail.com</Box>
+                  <Box zIndex={10}>simulationconcept@hotmail.com</Box>
                 </Center>
               </Flex>
             </Center>
@@ -98,13 +98,13 @@ const ContactUs = () => {
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}
-              zIndex={9999}
+              zIndex={10}
             >
               <Stack
                 align="center"
                 justify="space-around"
                 direction={{ base: 'row', md: 'column' }}
-                zIndex={9999}
+                zIndex={10}
               >
                 <Tooltip
                   label={hasCopied ? 'Email Copied!' : 'Copy Email'}

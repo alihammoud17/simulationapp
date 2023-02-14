@@ -11,10 +11,10 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 
 const Home = () => {
   return (
-    <Box padding="2rem 1rem" zIndex={9999}>
+    <Box padding="2rem 1rem" zIndex={10}>
       <Center pb={10}>
         <Image
-          zIndex={9999}
+          zIndex={10}
           w="auto"
           h="250px"
           src="/images/simulation_logo_2_white.png"
@@ -30,7 +30,7 @@ const Home = () => {
           Enlighting the slaves of this generation
         </Heading>
         <Center
-          zIndex={9999}
+          zIndex={10}
           my={10}
           w={{ base: '100%', lg: '60%' }}
           h="20rem"
@@ -45,9 +45,9 @@ const Home = () => {
         // alignItems={{ base: 'center', lg: 'start' }}
         // justifyContent={{ base: 'center', lg: 'start' }}
         py={5}
-        zIndex={9999}
+        zIndex={10}
       >
-        <Heading zIndex={9999} color="#fff">
+        <Heading zIndex={10} color="#fff">
           FEATURED
         </Heading>
       </Center>
@@ -90,7 +90,7 @@ const Home = () => {
             )
         )}
       </Swiper>
-      <Center zIndex={9999}>
+      <Center zIndex={10}>
         <div className="swiper-pagination-custom"></div>
       </Center>
       {/* <Flex flexDir={{ base: 'column', lg: 'row' }} gap={5} justify="center">
@@ -102,26 +102,26 @@ const Home = () => {
         )}
       </Flex> */}
 
-      <Center zIndex={9999} mt={35}>
+      <Center zIndex={10} mt={35}>
         <Image
-          zIndex={9999}
+          zIndex={10}
           w="35rem"
           src="/images/simulation_choose_wisely_white.png"
         />
       </Center>
 
-      <Center zIndex={9999} pb={10} pt={5} gap={2}>
-        <Link zIndex={9999} href="#">
+      <Center zIndex={10} pb={10} pt={5} gap={2}>
+        <Link zIndex={10} href="#">
           <Image
-            zIndex={9999}
+            zIndex={10}
             w="15rem"
             h="auto"
             src="/images/simulation_lefthand.png"
           />
         </Link>
-        <Link zIndex={9999} href="https://www.linkedin.com/signup/cold-join">
+        <Link zIndex={10} href="https://www.linkedin.com/signup/cold-join">
           <Image
-            zIndex={9999}
+            zIndex={10}
             w="15rem"
             h="auto"
             src="/images/simulation_righthand.png"
