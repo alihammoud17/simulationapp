@@ -7,7 +7,7 @@ export const creamTheme = extendTheme({
         height: '100%',
       },
       body: {
-        bg: '#FFFEF2',
+        bg: 'transparent',
         color: '#212427',
         height: '100%',
       },

@@ -54,16 +54,20 @@ const ContactUs = () => {
       }}
       id="contact"
       w="100%"
+      zIndex={9999}
+      color="#fff"
     >
       <Box
         borderRadius="lg"
         m={{ base: 1, md: 5, lg: 8 }}
         p={{ base: 1, lg: 8 }}
+        zIndex={9999}
       >
         <Box>
-          <VStack spacing={{ base: 4, md: 5, lg: 6 }}>
-            <Center gap="3" flexDir="column">
+          <VStack spacing={{ base: 4, md: 5, lg: 6 }} zIndex={9999}>
+            <Center gap="3" flexDir="column" zIndex={9999}>
               <Heading
+                zIndex={9999}
                 fontSize={{
                   base: '4xl',
                   md: '5xl',
@@ -72,20 +76,21 @@ const ContactUs = () => {
                 Get in Touch
               </Heading>
               <Flex
+                zIndex={9999}
                 gap={{ base: 2, lg: '10' }}
                 direction={{ base: 'column', lg: 'row' }}
               >
-                <Center gap="3">
-                  <Box>
+                <Center gap="3" zIndex={9999}>
+                  <Box zIndex={9999}>
                     <MdPhone />
                   </Box>
-                  <Box>+96170866845 | +96171322771</Box>
+                  <Box zIndex={9999}>+96170866845 | +96171322771</Box>
                 </Center>
-                <Center gap="3">
+                <Center zIndex={9999} gap="3">
                   <Box>
                     <MdEmail />
                   </Box>
-                  <Box>simulationconcept@hotmail.com</Box>
+                  <Box zIndex={9999}>simulationconcept@hotmail.com</Box>
                 </Center>
               </Flex>
             </Center>
@@ -93,11 +98,13 @@ const ContactUs = () => {
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: 'column', md: 'row' }}
+              zIndex={9999}
             >
               <Stack
                 align="center"
                 justify="space-around"
                 direction={{ base: 'row', md: 'column' }}
+                zIndex={9999}
               >
                 <Tooltip
                   label={hasCopied ? 'Email Copied!' : 'Copy Email'}
@@ -105,6 +112,7 @@ const ContactUs = () => {
                   hasArrow
                 >
                   <IconButton
+                    color="#fff"
                     aria-label="email"
                     variant="ghost"
                     size="lg"
@@ -119,8 +127,12 @@ const ContactUs = () => {
                   />
                 </Tooltip>
 
-                <Link href="https://www.facebook.com/profile.php?id=100089393255867&mibextid=LQQJ4d">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=100089393255867&mibextid=LQQJ4d"
+                  target="_blank"
+                >
                   <IconButton
+                    color="#fff"
                     aria-label="github"
                     variant="ghost"
                     size="lg"
@@ -134,8 +146,12 @@ const ContactUs = () => {
                   />
                 </Link>
 
-                <Link href="https://www.instagram.com/simulation.lb/">
+                <Link
+                  href="https://www.instagram.com/simulation.lb/"
+                  target="_blank"
+                >
                   <IconButton
+                    color="#fff"
                     aria-label="twitter"
                     variant="ghost"
                     size="lg"
@@ -148,9 +164,13 @@ const ContactUs = () => {
                   />
                 </Link>
 
-                <Link href="#">
+                <Link
+                  href="https://www.tiktok.com/@simulation.lb?_t=8ZZtubWS9K5&_r=1"
+                  target="_blank"
+                >
                   <IconButton
                     aria-label="linkedin"
+                    color="#fff"
                     variant="ghost"
                     size="lg"
                     icon={<FaTiktok size="28px" />}
@@ -175,21 +195,33 @@ const ContactUs = () => {
                   <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
 
-                    <InputGroup>
+                    <InputGroup bgColor="#fff">
                       <InputLeftElement children={<BsPerson />} />
-                      <Input type="text" name="name" placeholder="Your Name" />
+                      <Input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        _placeholder={{
+                          color: 'rgba(0,0,0,0.4)',
+                        }}
+                        color="#000"
+                      />
                     </InputGroup>
                   </FormControl>
 
                   <FormControl isRequired>
                     <FormLabel>Email</FormLabel>
 
-                    <InputGroup>
+                    <InputGroup bgColor="#fff">
                       <InputLeftElement children={<MdOutlineEmail />} />
                       <Input
                         type="email"
                         name="email"
                         placeholder="Your Email"
+                        color="#000"
+                        _placeholder={{
+                          color: 'rgba(0,0,0,0.4)',
+                        }}
                       />
                     </InputGroup>
                   </FormControl>
@@ -202,15 +234,21 @@ const ContactUs = () => {
                       placeholder="Your Message"
                       rows={6}
                       resize="none"
+                      color="#000"
+                      bgColor="#fff"
+                      _placeholder={{
+                        color: 'rgba(0,0,0,0.4)',
+                      }}
                     />
                   </FormControl>
 
                   <Button
                     colorScheme="blue"
-                    bg="blue.400"
-                    color="white"
+                    bgColor="#000"
+                    color="#fff"
                     _hover={{
-                      bg: 'blue.500',
+                      bg: '#fff',
+                      color: '#000',
                     }}
                     isFullWidth
                   >

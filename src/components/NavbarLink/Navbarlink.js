@@ -4,6 +4,6 @@ export const active_navlink = {
 };
 
 export const navlink = {
-  color: '#191919',
+  color: 'inherit',
   textDecoration: 'none',
 };

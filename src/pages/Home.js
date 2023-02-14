@@ -1,5 +1,5 @@
 import React from 'react';
-import { Center, Image, Box, Flex, Heading } from '@chakra-ui/react';
+import { Center, Image, Box, Flex, Heading, Link } from '@chakra-ui/react';
 import FeaturedCard from '../components/FeaturedCard';
 import { data } from '../data/dummy';
 import { CFaPlayCircle } from '../components/Icons';
@@ -11,20 +11,32 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 
 const Home = () => {
   return (
-    <Box padding="2rem 1rem">
+    <Box padding="2rem 1rem" zIndex={9999}>
       <Center pb={10}>
-        <Image w="auto" h="250px" src="/images/simulation_logo_2.png" />
+        <Image
+          zIndex={9999}
+          w="auto"
+          h="250px"
+          src="/images/simulation_logo_2_white.png"
+        />
       </Center>
       <Center flexDir={{ base: 'column', lg: 'row' }} gap={15}>
-        <Heading w={{ base: '100%', lg: '60%' }} textAlign="center">
+        <Heading
+          zIndex="9999"
+          color="#fff"
+          w={{ base: '100%', lg: '60%' }}
+          textAlign="center"
+        >
           Enlighting the slaves of this generation
         </Heading>
         <Center
+          zIndex={9999}
           my={10}
           w={{ base: '100%', lg: '60%' }}
           h="20rem"
-          border="1px solid #212427"
+          border="1px solid #fff"
           borderRadius="0.2rem"
+          bgColor="#fff"
         >
           <CFaPlayCircle fontSize="5xl" />
         </Center>
@@ -33,8 +45,11 @@ const Home = () => {
         // alignItems={{ base: 'center', lg: 'start' }}
         // justifyContent={{ base: 'center', lg: 'start' }}
         py={5}
+        zIndex={9999}
       >
-        <Heading>FEATURED</Heading>
+        <Heading zIndex={9999} color="#fff">
+          FEATURED
+        </Heading>
       </Center>
       <Swiper
         // pagination={{
@@ -75,7 +90,7 @@ const Home = () => {
             )
         )}
       </Swiper>
-      <Center>
+      <Center zIndex={9999}>
         <div className="swiper-pagination-custom"></div>
       </Center>
       {/* <Flex flexDir={{ base: 'column', lg: 'row' }} gap={5} justify="center">
@@ -86,8 +101,32 @@ const Home = () => {
             )
         )}
       </Flex> */}
-      <Center pb={10}>
-        <Image w="10rem" h="auto" src="/images/human_icon.png" />
+
+      <Center zIndex={9999} mt={35}>
+        <Image
+          zIndex={9999}
+          w="35rem"
+          src="/images/simulation_choose_wisely_white.png"
+        />
+      </Center>
+
+      <Center zIndex={9999} pb={10} pt={5} gap={2}>
+        <Link zIndex={9999} href="#">
+          <Image
+            zIndex={9999}
+            w="15rem"
+            h="auto"
+            src="/images/simulation_lefthand.png"
+          />
+        </Link>
+        <Link zIndex={9999} href="https://www.linkedin.com/signup/cold-join">
+          <Image
+            zIndex={9999}
+            w="15rem"
+            h="auto"
+            src="/images/simulation_righthand.png"
+          />
+        </Link>
       </Center>
     </Box>
   );
