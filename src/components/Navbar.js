@@ -99,6 +99,26 @@ const Navbar = ({ onOpen }) => {
               w="5.2rem"
               color="#fff"
             >
+              <NavbarLink zIndex={10} to="/signup">
+                SIGN UP
+              </NavbarLink>
+            </ListItem>
+            <ListItem
+              zIndex={10}
+              display={{ base: 'none', lg: 'block' }}
+              w="5.2rem"
+              color="#fff"
+            >
+              <NavbarLink zIndex={10} to="/login">
+                Login
+              </NavbarLink>
+            </ListItem>
+            <ListItem
+              zIndex={10}
+              display={{ base: 'none', lg: 'block' }}
+              w="5.2rem"
+              color="#fff"
+            >
               <NavbarLink zIndex={10} to="/aboutus">
                 About Us
               </NavbarLink>

@@ -48,6 +48,12 @@ const Sidebar = ({ isOpen, onClose }) => {
 
           <List>
             <ListItem onClick={onClose} h="2rem" w="5.2rem">
+              <NavbarLink to="/signup">SIGN UP</NavbarLink>
+            </ListItem>
+            <ListItem onClick={onClose} h="2rem" w="5.2rem">
+              <NavbarLink to="/login">Log In</NavbarLink>
+            </ListItem>
+            <ListItem onClick={onClose} h="2rem" w="5.2rem">
               <NavbarLink to="/">Home</NavbarLink>
             </ListItem>
             <ListItem onClick={onClose} h="2rem" w="5.2rem">

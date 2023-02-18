@@ -111,7 +111,7 @@ const Home = () => {
       </Center>
 
       <Center zIndex={10} pb={10} pt={5} gap={2}>
-        <Link zIndex={10} href="#">
+        <Link zIndex={10} href="/signup">
           <Image
             zIndex={10}
             w="15rem"
